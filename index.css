@@ -1,0 +1,42 @@
+
+
+td{
+    border: 1px solid #7b5b5b;
+    width: 35px;
+    height: 70px;
+    font-size: 13px;
+    text-orientation: upright;
+    transform: rotate(-90deg);
+}
+
+tr{
+    border-bottom: 1;
+}
+html{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#tab{
+    height: 100%;
+    margin-left: 20px;
+}
+.rua{
+    border: 2px dashed black;
+    height: 800px;
+    width: 30px;
+    
+}
