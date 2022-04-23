@@ -9,9 +9,14 @@ function makeTable(){
         var tr =document.createElement('tr');
         for(var colIndex =0;colIndex<col;colIndex++){
             var td = document.createElement('td');
+            td.setAttribute('onmouseover','detalhe()');
+            td.setAttribute('id','cells');
             var text = document.createTextNode(rowIndex+"X"+colIndex)
+            var div = document.createElement('div')
+            div.setAttribute('id','detalhes');
 
             td.appendChild(text);
+            td.appendChild(div)
             tr.appendChild(td)
 
         }
@@ -19,7 +24,7 @@ function makeTable(){
     }
 
     alturaRua(row)
-
+    
 }
 
 const getData = ()=>{
@@ -39,6 +44,19 @@ function alturaRua(numFilas) {
     document.getElementById('tab').style.height=parseInt(altura)+"px"
     //document.getElementsByClass("rua").style.height = 70*numFilas;
   }
+
+function detalhe(){
+    //document.getElementsByClassName('tooltiptext').style.width="400px;"
+    //alert('hello')
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
 
 
 document.getElementById('make').addEventListener('click',makeTable)
