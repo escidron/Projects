@@ -7,11 +7,37 @@ td{
     font-size: 13px;
     text-orientation: upright;
     transform: rotate(-90deg);
+    position: relative;
+    padding: 1rem;
+    background: whitesmoke;
+    border: 1px solid black;
 }
+
+#detalhes {
+    position: absolute;
+    top: 0;
+    transform: translateY(70%) scale(0);
+    transition: transform 0.1s ease-in;
+    transform-origin: left;
+    display: inline;
+    background: white;
+    z-index: 20;
+    min-width: 100%;
+    padding: 1rem;
+    border: 1px solid black;
+    visibility: hidden;
+  }
+
+  #detalhes:hover span {
+    transform: translateY(70%) scale(1);
+
+  }
 
 tr{
     border-bottom: 1;
 }
+
+
 html{
     height: 100%;
     width: 100%;
@@ -39,4 +65,9 @@ body{
     height: 800px;
     width: 30px;
     
+}
+
+
+table{
+    border-collapse: collapse;
 }
