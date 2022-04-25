@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+<body>
+  <input type="checkbox"  id="toggler">
+  <label id="eyeButton" for="toggler"><i id="menu-icon" class="fas fa-lg fa-eye" onclick="changeIcon(this)"></i></label>
+
+
+
+  <div  id="mySidenav" class="sidenav"> 
+    <div id="nav">       
+      <div class="card" id="card">
+        <img class="card-img-top" src="totvs.png" alt="Card image cap" id="logo">
+        <div class="card-header"  id="ambiente">
+          <h5 id="textAmbiente">RDV</h5>
+        </div>
+        <div class="card-body">
+
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">                
+                  <label><i class="fas fa-lg fa-money-bill"></i></label>FATURAMENTO
+                </button>
+                
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <div class="list-group ">
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Cras justo odio</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  <label ><i class="fas fa-lg fa-boxes"></i></label>ESTOQUE
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <div class="list-group ">
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Cras justo odio</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Morbi leo risus</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Porta ac consectetur ac</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Vestibulum at eros</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  <label ><i class="fas fa-lg fa-database"></i></label>ACD
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <div class="list-group ">
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Cras justo odio</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Morbi leo risus</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Porta ac consectetur ac</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Vestibulum at eros</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFor" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  <label ><i class="fas fa-lg fa-wrench"></i></label>CONFIGURADOR
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFor" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFor">
+                <div class="accordion-body">
+                  <div class="list-group ">
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Cras justo odio</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Morbi leo risus</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Porta ac consectetur ac</button>
+                    <button id="btnOptions" type="button" class="border-0 list-group-item list-group-item-action">Vestibulum at eros</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="list-group" id="cardOptions">
+              <button onclick="openNavCentralAjuda()" id="cardOption" type="button" class="border-0 list-group-item list-group-item-action"><label ><i class="fas fa-lg fa-comment-alt" ></i></label>Central de Ajuda</button>
+              <button onclick="openNavFaleConosco()" id="cardOption" type="button" class="border-0 list-group-item list-group-item-action"><label ><i class="fas fa-lg fa-phone-volume"></i></label>Fale conosco</button>
+              <button onclick="openNavConfig()" id="cardOption" type="button" class="border-0 list-group-item list-group-item-action"><label ><i class="fas fa-lg fa-gear"></i></label>Configurações</button>
+              <button id="cardOption" type="button" class="border-0 list-group-item list-group-item-action"><label ><i class="fas fa-lg fa-sign-out-alt"></i></label>Sair</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer  border-0 mt-auto" id="footer" >
+          <img id="logoFooter" src="palmbranco-removebg-preview.png"></img> 
+          <p id="version">v1.0.0</p>
+     </div>
+      </div>
+      </div>
+      
+      
+   
+    </div>
+  </div>
+
+<div id="main">
+  <h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNavFaleConosco()">&#9776; open</span>
+</div>
+        <!-- Tela fala conosco -->
+<div id="myNav" class="FaleConosco">
+  <a href="#" id="fechaFaleConosco" class="closebtn" onclick="closeNavFaleConosco()"><label ><i class="fas fa-lg fa-arrow-left"></i></label></a>
+  <div class="FaleConosco-content">
+    <p>Av. Dr. Gastão Vidigal, 1132</p>
+    <p>Vila Leopoldina-São Paulo-SP</p>
+    <p>CEP 05314-000</p>
+    <div class="list-group" id="faleConoscoOptions">
+      <button  id="faleConoscoTel" type="button" class="border-0 list-group-item list-group-item-action"><label ><i class="fa  fa-phone" style="color:green" ></i></label>(11) 4580-0067</button>
+      <button  id="faleConoscoTel" type="button" class="border-0 list-group-item list-group-item-action"><label ><i class="fa fa-lg fa-1x fa-whatsapp" style="color:green"></i></label>(11) 9 7214-4445</button>
+      <a id="emailContato" href="mailto:contato@meliorapp.com.br">contato@meliorapp.com.br</a>
+      <a id="siteContato" href="http://www.meliorapp.com.br">www.meliorapp.com.br</a>
+      <div id="boxAjuda">
+        <button  id="buttonAjuda" type="button" class="border-0 list-group-item list-group-item-action"><label ><i class="fas fa-lg fa-comments" style="color:green" ></i></label>Central de Ajuda</button>
+      </div>
+      <img  src="palmcopia.png" alt="Card image cap" id="logoFaleConosco">
+    </div>
+  </div> 
+</div> 
+
+      <!-- Tela configuracoes -->
+<div id="navConfig" class="navConfig"> 
+  <div class="card"  id="cardConfig">
+    <div class="card-header" id="cardHeaderConfig">
+      <img src="logoUser.jpg" id="logoUser">
+      <label style="font-size: 18px;"><i class="fa fa-lg fa-2x fa-gear" style="color:green"></i>Configurações</label>
+      <img src="iconPalm.png" id="iconPalm">
+    </div>
+    <div class="card-body" id="cardBodyConfig">
+      <div id="darkMode">
+        <h6 class="font-weight-bold" id="darkModoText">Tema Escuro</h6>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>     
+    </div>
+    <div class="card-footer mt-auto" id="cardFooterConfig">
+      <button onclick="closeNavConfig()" id="fechaCardConfig" type="button" ><label ><i id="arrowConfig" class="fas fa-lg fa-arrow-left" style="color:white" ></i></label></button>
+    </div>
+  </div>
+</div> 
+
+  <!-- Tela central de ajuda -->
+  <div id="navCentralAjuda" class="navCentralAjuda"> 
+    <div class="card"  id="cardConfig">
+      <div class="card-header" id="cardHeaderConfig">
+        <img src="logoUser.jpg" id="logoUser">
+        <div style="font-size: 18px;" id="divBars">
+          <div id="barsIcon" >
+            <div id="barIcon1"></div>
+            <div id="barIcon2"></div>
+            <div id="barIcon3"></div>
+          </div>
+          <div >Central de Ajuda</div>
+        </div>
+        <img src="iconPalm.png" id="iconPalm">
+      </div>
+      <div class="card-body" id="cardBodyCentralAjuda">
+        <div id="avisoCentralAjuda"><h6 id="avisoCentralAjudaText">(user x) nesta central voce podera abrir e acompanhar chamados de erros do MeliorApp e tambem referente a duvidas operacionais e conceituais</h6></div>
+        <div id="divTextFilter"><h6 id="textFilter">Configure nos parametros abaixo os tipos e filtros de chamados a consultar</h6></div>
+        <div id="filtroDatas">
+          <div id="dataDe">
+              asdas
+          </div>
+          <div id="dataAte">
+              fsdfsdf
+          </div>
+        </div>
+        <div id="darkMode">
+          <h6 class="font-weight-bold" id="darkModoText">Tema Escuro</h6>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>     
+      </div>
+      <div class="card-footer mt-auto" id="cardFooterConfig">
+        <button onclick="closeNavCentralAjuda()" id="fechaCardConfig" type="button" ><label ><i id="arrowConfig" class="fas fa-lg fa-arrow-left" style="color:white" ></i></label></button>
+      </div>
+    </div>
+  </div> 
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+  let changeIcon = function(icon) {
+      icon.classList.toggle('fa-eye-slash')
+  }
+</script>
+<script src="https://use.fontawesome.com/d6bec6e345.js"></script>
+<script>
+  function openNavFaleConosco() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+  function closeNavFaleConosco() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+
+  function openNavConfig() {
+    document.getElementById("navConfig").style.width = "100%";
+  }
+  
+  function closeNavConfig() {
+    document.getElementById("navConfig").style.width = "0%";
+  }
+
+  function openNavCentralAjuda() {
+    document.getElementById("navCentralAjuda").style.width = "100%";
+  }
+  
+  function closeNavCentralAjuda() {
+    document.getElementById("navCentralAjuda").style.width = "0%";
+  }
+  </script>
+</body>
+</html> 
