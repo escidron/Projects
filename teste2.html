@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .has-details {
+  position: relative;
+}
+
+.details {
+  position: absolute;
+  top: 0;
+  transform: translateY(70%) scale(0);
+  transition: transform 0.1s ease-in;
+  transform-origin: left;
+  display: inline;
+  background: white;
+  z-index: 20;
+  min-width: 100%;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.has-details:hover span {
+  transform: translateY(70%) scale(1);
+}
+
+td {
+  padding: 1rem;
+  background: whitesmoke;
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+          <td class='has-details'>
+            hover for details
+            <span class="details">more info here</span>
+          </td>
+          <td>stuff</td>
+          <td>stuff</td>
+          <td>stuff</td>
+        </tr>
+        <tr>
+          <td class='has-details'>
+            hover for details
+            <span class="details">more info here</span>
+          </td>
+          <td>stuff</td>
+          <td>stuff</td>
+          <td>stuff</td>
+        </tr>
+        <tr>
+          <td class='has-details'>
+            hover for details
+            <span class="details">more info here</span>
+          </td>
+          <td>stuff</td>
+          <td>stuff</td>
+          <td>stuff</td>
+        </tr>
+      </table>
+</body>
+</html>

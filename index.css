@@ -6,14 +6,24 @@ td{
     height: 70px;
     font-size: 13px;
     text-orientation: upright;
-    transform: rotate(-90deg);
+    /*transform: rotate(-90deg);*/
+    
     position: relative;
-    padding: 1rem;
-    background: whitesmoke;
-    border: 1px solid black;
+   
 }
 
-#detalhes {
+#cellText
+{
+  display: block;
+  transform: rotate(-90deg);
+  
+}
+/*
+td:hover #details {
+    transform: translateY(70%) scale(1);
+  }*/
+
+#details {
     position: absolute;
     top: 0;
     transform: translateY(70%) scale(0);
@@ -25,12 +35,7 @@ td{
     min-width: 100%;
     padding: 1rem;
     border: 1px solid black;
-    visibility: hidden;
-  }
-
-  #detalhes:hover span {
-    transform: translateY(70%) scale(1);
-
+   
   }
 
 tr{
@@ -59,6 +64,7 @@ body{
 #tab{
     height: 100%;
     margin-left: 20px;
+    
 }
 .rua{
     border: 2px dashed black;
@@ -68,6 +74,3 @@ body{
 }
 
 
-table{
-    border-collapse: collapse;
-}
